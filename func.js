@@ -168,7 +168,7 @@ export function holdCards() {
 //using card array, update gfx
 export function displayUpdatedCards() {
   for (let i = 0; i < 5; i++) {
-    cardDiv.children[i].src = `../img/cards/png/${cards[i]}.png`;
+    cardDiv.children[i].src = `./img/cards/png/${cards[i]}.png`;
   }
 }
 
