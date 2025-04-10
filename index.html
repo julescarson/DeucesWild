@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- script type=module for ES6 on client side, for import / export e.g., func.js -->
+    <script src="./index.js" type="module" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Deuces Wild!</title>
+  </head>
+  <body>
+    <div id="title"><h1>Deuces Wild!</h1></div>
+    
+    <div id="playingCards"></div>
+    <div id="buttons"></div>
+    <div id="totals"> 
+      <p>💰 BALANCE </p>
+      <p id="currBalance"> </p>
+      <p>💵 CURRENT BET </p>
+      <p id="currBet"> </p>
+    </div>
+    <div id="playerCash">
+      <span id="betText">🤑 BET</span>
+    </div>
+    <div id="placeBetText">PLACE A BET!</div>
+    <!-- <div id="indicatorLights">
+      <div class="light" id="light1"></div>
+      <div class="light" id="light2"></div>
+      <div class="light" id="light3"></div>
+      <div class="light" id="light4"></div>
+      <div class="light" id="light5"></div>
+    </div> -->
+    <!-- <div id="checkBoxes">
+      <input type="checkbox" id="probCheckBox"  />
+      <label for="probCheckBox">Show Probabilities</label>
+      <input type="checkbox" id="AICheckBox" />
+      <label for="AICheckBox">AI Assistant</label>
+    </div> -->
+    <div id="currPayoff">
+      <table>
+        <tr>
+          <th >Current Hand</th>
+          <th >Payoff</th>
+        </tr>
+        <tr>
+          <td id="currHandType">-</th>
+          <td id="payoffAmount">-</th>
+        </tr>  
+      </table>
+    </div>
+    <div id="payoffs">
+      <table>
+        <tr>
+          <th>Payoff</th>
+          <th>Hand Description</th>
+          <!-- <th>Probability</th> -->
+          <th>Payoff</th>
+          <th>Hand Description</th>
+          <!-- <th>Probability</th> -->
+        </tr>
+        <tr>
+          <td>800</td>
+          <td>Natural Royal Flush</td>
+          <!-- <td>-</td> -->
+          <td>15</td>
+          <td>Five of a kind</td>
+          <!-- <td>-</td> -->
+        </tr>
+        <tr>
+          <td>200</td>
+          <td>Four deuces</td>
+          <!-- <td>-</td> -->
+          <td>9</td>
+          <td>Straight flush</td>
+          <!-- <td>-</td> -->
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>Wild royal flush</td>
+          <!-- <td>-</td> -->
+          <td>5</td>
+          <td>Four of a kind</td>
+          <!-- <td>-</td> -->
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Full house</td>
+          <!-- <td>-</td> -->
+          <td>2</td>
+          <td>Flush</td>
+          <!-- <td>-</td> -->
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Straight</td>
+          <!-- <td>-</td> -->
+          <td>-1</td>
+          <td>No Pay Hand</td>
+          <!-- <td>-</td> -->
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Three of a Kind</td>
+          <!-- <td>-</td>
+          <td>-</td> -->
+        </tr>
+      </table>
+    </div>
+
+  </body>
+</html>

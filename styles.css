@@ -1,0 +1,139 @@
+body {
+  font-family: "Trebuchet MS", sans-serif;
+  background-color: #173923;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Style the #payoffs container */
+#payoffs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  max-width: fit-content;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  max-width: fit-content;
+}
+
+/* Style the table */
+table {
+  border-collapse: collapse;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* font-family: Arial, sans-serif; */
+}
+
+/* Header and cell styling */
+th,
+td {
+  padding: 8px 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+/* Header row */
+th {
+  color: #173923;
+  background: #f0f0f0;
+  font-weight: bold;
+}
+
+/* Hover effect */
+tr:hover {
+  background: #de5c42;
+  transition: 0.2s;
+}
+
+/* the playing card div */
+#playingCards {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+}
+
+#indicatorLights {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* card styling */
+.card {
+  width: 150px;
+  height: auto; /* same aspect ratio, just change width to alter size on page*/
+  border-radius: 5px;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.25));
+  transition: transform 0.2s ease-in-out;
+}
+
+/* enlarge hover */
+.card:hover {
+  transform: scale(1.1);
+}
+
+/* the div */
+#buttons,
+#playerCash,
+#totals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25em;
+  gap: 20px;
+}
+
+#totals {
+  margin-right: 2em;
+}
+
+/* actual buttons */
+#deal,
+#draw,
+#redeal,
+#betUp,
+#betDown,
+#allIn,
+#resetBank {
+  font-size: 24px;
+  margin: 10px;
+}
+
+.held {
+  box-shadow: 0 0 5px 5px #ffe51d;
+  /* border-color: #c6a900; */
+  /* border: 1px solid yellow; */
+  transform: scale(1.05); /* Slightly enlarge the card */
+}
+
+#currPayoff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  max-width: fit-content;
+}
+
+.light {
+  width: 50px;
+  height: 50px;
+  background-color: black; /* Initial color */
+  border-radius: 50%; /* Makes it circular */
+  margin: 20px auto;
+  transition: background-color 1s; /* Smooth color transition */
+}
+
+.highlight {
+  box-shadow: 0 0 5px 5px #ffe51d;
+  transition: box-shadow 0.3s ease;
+}
