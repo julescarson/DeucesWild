@@ -70,7 +70,7 @@ export function resetData() {
 export function faceDown() {
   for (let i = 0; i < 5; i++) {
     let img = document.createElement("img");
-    img.src = "/img/cards/png/card_back.png";
+    img.src = "./img/cards/png/card_back.png";
     img.classList.add("card");
     cardDiv.appendChild(img);
     cards.push(img);
