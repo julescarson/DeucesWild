@@ -143,10 +143,10 @@ function toggleHold(event) {
 
   let cardsToKeep = structuredClone(cards);
   cardsToKeep = cardsToKeep.filter((_, index) => heldCards2[index]);
-  if (document.getElementById("probCheckBox").checked) {
-    let probabilities = calculatePayoffProbabilities(deck, cardsToKeep);
-    updatePayoffProbabilities(probabilities);
-  }
+  // if (document.getElementById("probCheckBox").checked) {
+  //   let probabilities = calculatePayoffProbabilities(deck, cardsToKeep);
+  //   updatePayoffProbabilities(probabilities);
+  // }
 }
 
 function probabilityDisplay() {
